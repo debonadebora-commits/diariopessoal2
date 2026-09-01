@@ -41,7 +41,7 @@ formulario.addEventListener("submit", async (evento) => {
 async function carregarAnotacao() {
 
     const resposta = await fetch(
-        `https://api-diario-pessoal-v2-0.onrender.com/anotacoes/${id}`
+        `https://diariopessoal.onrender.com/anotacoes/${id}`
     );
 
     if (!resposta.ok) {
