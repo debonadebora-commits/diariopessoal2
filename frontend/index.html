@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Diário pessoal. Anote o seu dia a dia de forma personalizada e segura.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gloock&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <script src="script-crud.js" defer></script>
+
+    <title>Diário pessoal</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Seu diário pessoal</h1>
+
+        <a href="./dashboard.html">
+            Ver minhas anotações
+        </a>
+    </header>
+
+    <main>
+        <section class="editor">
+
+            <h2>Criar anotação</h2>
+
+            <form class="anotacao">
+
+                <div class="dados">
+
+                    <div class="campo">
+                        <label for="textDate">Data</label>
+                        <input id="textDate" type="date" name="data" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="userHumor">Humor</label>
+
+                        <select id="userHumor" name="humor">
+                            <option value="">Selecione...</option>
+                            <option value="feliz">Feliz</option>
+                            <option value="triste">Triste</option>
+                            <option value="bravo">Bravo</option>
+                            <option value="medo">Medo</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="campo texto">
+                    <label for="texto">Sua anotação</label>
+
+                    <textarea
+                        id="texto"
+                        name="texto"
+                        placeholder="Digite o corpo do texto aqui"
+                        required
+                    ></textarea>
+                </div>
+
+                <button id="botaoRegistrarAnotacao" type="submit">
+                    Registrar
+                </button>
+
+            </form>
+
+        </section>
+    </main>
+
+</body>
+</html>
+

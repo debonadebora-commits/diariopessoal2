@@ -1,0 +1,77 @@
+body, h1, fieldset, label, input, button, h2, header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  max-width: 1900px;
+  max-height: 900px;
+  background-color: #100600;
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header{
+  background-color: #F9FBB9;
+  padding-top: 19px;
+  padding-bottom: 6px;
+  padding-left: 65px;
+}
+
+h1{
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#6C2D03;
+}
+
+h2{
+  font-size: 32px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 27%;
+  color:#AA8800;
+}
+
+form {
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+fieldset {
+  width: 50%;
+  min-height: 30%;
+  max-height: 50%;
+  margin: 0 20%;
+  background-color: #F9FBB9;
+  padding: 50px 0;
+}
+
+label{
+  margin-left:20%;
+}
+input{
+  width: 40%;
+  margin-bottom: 20px;
+  background-color: #F9FBB9;
+  border-color: #100600;
+}
+
+button {
+  font-size: medium;
+  margin-top: 30px;
+  margin-left: 70%;
+  height: 40px;
+  width: 80px;
+  background-color: #F9FBB9;
+  border-radius: 10px;
+  color: #100600;
+}
+
+p {
+  color: #F9FBB9;
+  margin-left: 50%;
+}

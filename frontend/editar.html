@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gloock&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styleEditar.css">
+    <script src="script-editar.js" defer></script>
+
+    <title>Editar anotação</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Seu diário pessoal</h1>
+        <a href="./dashboard.html">Voltar às anotações</a>
+    </header>
+
+    <main>
+        <section class="editor">
+            <h2>Editar anotação</h2>
+
+            <form class="anotacao">
+
+                <div class="campo">
+                    <label for="data">Data</label>
+                    <input id="data" type="date" name="data">
+                </div>
+
+                <div class="campo">
+                    <label for="humor">Humor</label>
+                    <input id="humor" type="text" name="humor">
+                </div>
+
+                <div class="campo texto">
+                    <label for="texto">Texto</label>
+                    <textarea id="texto" name="texto"></textarea>
+                </div>
+
+                <button type="submit">Salvar alterações</button>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
+

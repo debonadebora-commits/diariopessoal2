@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #100600;
+
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    color: #100600;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 30px;
+
+    background-color: #F9FBB9;
+}
+
+h1 {
+    font-family: "DM Serif Text", serif;
+    font-size: 38px;
+    font-weight: 400;
+
+    color: #6C2D03;
+}
+
+header a {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #100600;
+    color: #F9FBB9;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+header a:hover {
+    background-color: #6C2D03;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+main {
+    width: min(100% - 40px, 1100px);
+
+    margin: 60px auto;
+}
+
+.editor {
+    padding: 45px 55px 50px;
+
+    background-color: #F9FBB9;
+
+    border-radius: 12px;
+}
+
+h2 {
+    margin-bottom: 35px;
+
+    font-family: "DM Serif Text", serif;
+    font-size: 40px;
+    font-weight: 400;
+
+    color: #AA8800;
+}
+
+/* =========================
+   FORMULÁRIO
+   ========================= */
+
+.anotacao {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 24px;
+    color: #100600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    border: 2px solid transparent;
+    border-radius: 7px;
+
+    background-color: #f4f5a8;
+    color: #100600;
+
+    font-family: "Gloock", serif;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+input,
+select {
+    height: 50px;
+    padding: 0 14px;
+
+    font-size: 18px;
+}
+
+textarea {
+    min-height: 350px;
+
+    padding: 16px;
+
+    resize: vertical;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #AA8800;
+    background-color: #F9FBB9;
+}
+
+textarea::placeholder {
+    color: #6C2D03;
+    opacity: 0.6;
+}
+
+/* =========================
+   LINHA
+   ========================= */
+
+hr {
+    width: 100%;
+
+    border: none;
+    border-top: 2px solid #AA8800;
+
+    opacity: 0.5;
+}
+
+/* =========================
+   BOTÃO
+   ========================= */
+
+button {
+    align-self: flex-end;
+
+    min-width: 190px;
+
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #100600;
+    color: #F9FBB9;
+
+    font-family: "Gloock", serif;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #6C2D03;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    main {
+        width: min(100% - 24px, 1100px);
+        margin: 30px auto;
+    }
+
+    .editor {
+        padding: 30px 22px 35px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .dados {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    label {
+        font-size: 21px;
+    }
+
+    textarea {
+        min-height: 300px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+

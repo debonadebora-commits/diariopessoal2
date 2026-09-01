@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #100600;
+    font-family: "Gloock", serif;
+    color: #100600;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #F9FBB9;
+    padding: 18px 30px;
+}
+
+h1 {
+    font-family: "DM Serif Text", serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #6C2D03;
+}
+
+header a {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #100600;
+    color: #F9FBB9;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+header a:hover {
+    background-color: #6C2D03;
+    transform: translateY(-2px);
+}
+
+/* CONTEÚDO */
+
+main {
+    width: min(100% - 40px, 1100px);
+    margin: 60px auto;
+}
+
+.editor {
+    background-color: #F9FBB9;
+    padding: 45px 55px 50px;
+    border-radius: 12px;
+}
+
+h2 {
+    margin-bottom: 35px;
+
+    font-family: "DM Serif Text", serif;
+    font-size: 38px;
+    font-weight: 400;
+
+    color: #AA8800;
+}
+
+/* FORMULÁRIO */
+
+.anotacao {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 24px;
+    color: #100600;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    border: 2px solid transparent;
+    border-radius: 7px;
+
+    background-color: #f4f5a8;
+    color: #100600;
+
+    font-family: "Gloock", serif;
+    font-size: 18px;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+                background-color 0.2s ease;
+}
+
+input {
+    height: 48px;
+    padding: 0 14px;
+}
+
+textarea {
+    min-height: 350px;
+    padding: 15px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #AA8800;
+    background-color: #F9FBB9;
+}
+
+/* BOTÃO */
+
+button {
+    align-self: flex-end;
+
+    min-width: 210px;
+    padding: 14px 24px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #100600;
+    color: #F9FBB9;
+
+    font-family: "Gloock", serif;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #6C2D03;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    main {
+        width: min(100% - 24px, 1100px);
+        margin: 30px auto;
+    }
+
+    .editor {
+        padding: 30px 22px 35px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    label {
+        font-size: 21px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
